@@ -11,14 +11,6 @@ body{
 }
 
 /* **************้header-nav**************** */
-header>.head-colmar{
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-between;
-    height: 64px;
-    width: 100%;
-    margin: auto 24px;
-}
 .colmar-logo{
     /* border: 1px solid red; */
     display: flex;
@@ -56,25 +48,7 @@ nav ul li a:hover{
 }
 
 /*  -------- HERO Learn something new everyday--------- */
-.hero{
-    /* border: 1px solid blue; */
-    background-color:#D0D3D4;
-    display: flex;
-    padding: 32px 24px;
-}
-.banner-img{
-    width: 60%;
-    /* height: 100%; */
-    padding-right: 24px;
-}
-.learn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* border: 1px solid red; */
-    width: 35%;
-    padding: 24px 24px 24px 0px;
-}
+
 .learn>p{
     padding: 16px 0px ;
 }
@@ -84,6 +58,8 @@ button,button>a{
     border: none;
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;
+
 }
 
 /* ***************information********** */
@@ -178,16 +154,11 @@ section.course h2 {
     margin: 8px 0px;
 }
 /* ------------------- Thesis exhibit---------------------- */
-.vdo video{
-    /* border: 1px solid red; */
-    width:100%;
-    margin-right: 24px;
-    margin-bottom: 24px;
-}
+
 .thesis{
     /* border: 1px solid red; */
     margin: 32px 24px;
-    width: 100%;
+    /* width: 100%; */
 }
 .thesis-h2{
     text-align: center;
@@ -250,14 +221,215 @@ footer{
     
 }
 
-@media screen and (min-width: 426px){
+@media screen and (min-width: 425px){
     .mobile{
         display: none;
     }
 }
+/* **************้header-nav**************** */
+header>.head-colmar{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    padding: 0px 24px;
+    /* margin: 0px 24px; */
+    background-color: white;
+    position: fixed;
+    top:0;
+}
+main{
+    margin-top: 64px;
+}
+.hero{
+    /* border: 1px solid blue; */
+    background-color:#D0D3D4;
+    display: flex;
+    padding: 32px 24px;
+}
+.banner-img{
+    width: 60%;
+    /* height: 100%; */
+    padding-right: 24px;
+}
+.learn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 30%;
+    padding: 24px 24px 24px 0px;
+    font-size: 1.3rem;
+}
+.vdo video{
+    /* border: 1px solid red; */
+    width:100%;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
 
 @media screen and (max-width: 425px){
     .desktop{
         display: none;
     }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        width: 35px;
+    }
+    div.head-colmar.desktop{
+        display: none;
+    }
+    header div.mobile{
+        background-color: white;
+        position: fixed;
+        top:0;
+        display: flex;
+        height: 64px;
+        width: 100%;
+        /* border: 1px solid red; */
+        justify-content: space-around;
+        /* justify-content: center; */  
+        align-items: center;
+    }
+    .banner-img{
+        width: 100%;
+        /* border: 1px solid red; */
+        margin: 0;
+        padding: 0;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .learn{
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;
+        /* margin: 32px 16px; */
+        color: #505050 ;
+        /* border: 1px solid red; */
+        padding: 32px 16px;
+    }
+    .button{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .learn>p{
+        padding-top: 32px;
+        padding-bottom: 24px;
+        width: 100%;
+    }
+
+    /* -----------------information------------------ */
+    .information{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .box-img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .aside-left{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        margin: 0;
+        padding: 16px;
+        width: 100%;
+    }
+    .box-aside3{
+        /* border: 1px solid red; */
+        margin-top: 16px;
+    }
+    .information aside{
+        border-left: 1px solid #D0D3D4 ;
+        width: 100%;
+        padding-top: 16px;
+    }
+    /* ***********Start learning******** */
+    .course{
+        padding: 0;
+        margin: 32px 0px;
+        /* border: 1px solid red; */
+        background-color: white;
+    }
+    .box-start{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        width: 100%;
+        list-style: none;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .box-text h3{
+        /* border: 1px solid red; */
+        font-weight: 400;
+        font-size: 1.3rem;
+        background-color: gainsboro;
+        width: 100%;
+        padding: 16px 16px 24px 16px;
+        margin: 0px;
+        
+    }
+    .box-card{
+        padding: 0px;
+        margin: 0px;
+        /* border: 1px solid pink; */
+        background-color: white;
+        width: 100%;
+    }
+    .thesis{
+        /* border: 1px solid red; */
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .vdo{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    video{
+        /* border: 1px solid red; */
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    footer{
+        border-top: 1px solid gainsboro;
+        padding: 16px ;
+        display: flex;
+        font-size: 0.9rem;
+        font-weight: 400;
+        /* border: 5px solid red; */
+    }
+    button{
+        /* border: 5px solid red; */
+        width:100%;
+        margin: 0;
+    }
+    .vdo video{
+        /* border: 1px solid red; */
+        width:100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
 }
