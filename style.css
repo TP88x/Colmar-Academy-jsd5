@@ -433,5 +433,8 @@ main{
         padding: 0;
         margin-bottom: 24px;
     }
+    .learn-h2{
+        font-size: 2rem;
+    }
 
 }
