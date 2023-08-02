@@ -40,11 +40,12 @@ nav ul li a{
     font-size: 1.2rem;
 }
 nav ul li a:hover{
-    padding: 16px;
-    border-radius: 32px;
+    padding: 12px;
+    height: 100%;
+    border-radius: 15px;
     background-color: gainsboro;
-    float: left;
-    width: auto;
+    /* float: left; */
+    /* width: auto; */
 }
 
 /*  -------- HERO Learn something new everyday--------- */
@@ -221,7 +222,7 @@ footer{
     
 }
 
-@media screen and (min-width: 425px){
+@media screen and (min-width: 426px){
     .mobile{
         display: none;
     }
@@ -274,6 +275,7 @@ main{
     .desktop{
         display: none;
     }
+
     *{
         margin: 0;
         padding: 0;
